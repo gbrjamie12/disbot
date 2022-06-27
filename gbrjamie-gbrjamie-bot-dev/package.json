@@ -1,0 +1,11 @@
+{
+  "name": "basic-discord-example",
+  "author": "gbrjamie",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest",
+    "axios": "^0.26.1",
+    "autocode-discordjs": "^1.1.0",
+    "@iamtraction/google-translate": "^1.1.2"
+  }
+}

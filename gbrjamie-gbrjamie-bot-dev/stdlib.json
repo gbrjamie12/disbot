@@ -1,0 +1,90 @@
+{
+  "name": "gbrjamie/gbrjamie-bot",
+  "timeout": 30000,
+  "connector": false,
+  "events": {
+    "functions/events/discord/bot_mention.js": {
+      "name": "discord.bot_mention"
+    },
+    "functions/events/autocode/self/deployed.js": {
+      "name": "autocode.self.deployed"
+    },
+    "functions/events/scheduler/hourly.js": {
+      "name": "scheduler.hourly",
+      "subtype": {
+        "offset": "0 minutes"
+      }
+    },
+    "functions/events/discord/message/commands/prefix/code.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/commands/prefix/help.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/commands/prefix/info.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/commands/prefix/perms.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/commands/prefix/rules.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/commands/warn.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "warn"
+      }
+    },
+    "functions/events/discord/message/commands/kick.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "kick"
+      }
+    },
+    "functions/events/discord/message/commands/lock.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "lock"
+      }
+    },
+    "functions/events/discord/message/commands/mute.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "mute"
+      }
+    },
+    "functions/events/discord/message/commands/unlock.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "unlock"
+      }
+    },
+    "functions/events/discord/message/commands/unmute.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "unmute"
+      }
+    },
+    "functions/events/discord/message/commands/serverrestrictions/allowedlinks.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/commands/serverrestrictions/removelink.js": {
+      "name": "discord.message.create"
+    }
+  },
+  "env": [
+    {
+      "name": "PREFIX",
+      "description": "Your bot's prefix"
+    },
+    {
+      "name": "API_Token",
+      "description": "Get your free API token here: https://p.nomics.com/pricing"
+    },
+    {
+      "name": "PREFIX_",
+      "description": "Set your prefix. {PREFIX}translate is how you would call the command. "
+    }
+  ]
+}
